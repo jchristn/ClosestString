@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<Version>1.0.0</Version>
+		<TargetFrameworks>netstandard2.1;netcoreapp3.1;net5.0;net6.0;net7.0;net471;net48</TargetFrameworks>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>ClosestString</Title>
+		<Authors>Joel Christner</Authors>
+		<Company>Joel Christner</Company>
+		<Description>A simple static library to find the nearest string in a list, and its edit distance, from a supplied string.</Description>
+		<Copyright>(c)2023 Joel Christner</Copyright>
+		<PackageProjectUrl>https://github.com/jchristn/ClosestString</PackageProjectUrl>
+		<PackageIcon>logo.png</PackageIcon>
+		<RepositoryUrl>https://github.com/jchristn/ClosestString</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>string closest match matching close edit distance levenshtein wagner fischer</PackageTags>
+		<PackageReleaseNotes>Initial release</PackageReleaseNotes>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="Assets\logo.ico">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Include="Assets\logo.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+</Project>
