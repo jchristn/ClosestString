@@ -11,6 +11,7 @@ If you have any issues or feedback, please file an issue here in Github. We'd lo
 ## New in v1.0.x
 
 - Initial release using Levenshtein (Wagner Fischer)
+- Added ```ClosestMatches``` static class to retrieve multiple matches ordered by edit distance
 
 ## Example Project
 
@@ -23,6 +24,8 @@ List<string> validValues = new List<string> { "foo", "bar", "baz", "joel", "mari
 (string, int) closest = ClosestString.UsingLevenshtein("fox", validValues);
 // closest.Item1 -> "foo"
 // closest.Item2 -> 1 
+
+List<(string, int)> matches = ClosestStrings.UsingLevenshtein("fox", validValues, 10); // max 10 results
 ```
 
 ## Version History

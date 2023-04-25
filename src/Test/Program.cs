@@ -39,7 +39,17 @@ namespace Test
             {
                 string val = Inputty.GetString("Value   :", null, false);
                 (string, int) ret = ClosestString.UsingLevenshtein(val, _Values);
+                List<(string, int)> matches = ClosestStrings.UsingLevenshtein(val, _Values, 10);
+                
                 Console.WriteLine("Closest : " + ret.Item1 + " [distance: " + ret.Item2 + "]");
+                
+                Console.WriteLine("All     :");
+                foreach ((string, int) match in matches)
+                {
+                    Console.WriteLine("  " + match.Item2 + ": " + match.Item1);
+                }
+
+                Console.WriteLine("");
             }
         }
     }

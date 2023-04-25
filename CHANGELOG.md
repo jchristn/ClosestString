@@ -5,6 +5,7 @@
 v1.0.x
 
 - Initial release
+- Added ```ClosestMatches``` static class to retrieve multiple matches ordered by edit distance
 
 ## Previous Versions
 
